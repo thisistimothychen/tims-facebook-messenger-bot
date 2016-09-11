@@ -308,12 +308,45 @@ function receivedMessage(event) {
         break;
 
       default:
-        sendTextMessage(senderID, "TEST");
+        if (parseInt(Number(messageText)) == messageText) {
+          var num = parseInt(Number(messageText));
+
+          if (num <= 0) {
+            sendTextMessage(senderID, messageText + " should be a positive number!");
+          } else {
+            var result = ""
+
+            for (var i = 1; i <= num; i++) {
+              if (i % 3 == 0 && i % 5 == 0) {
+                result += "Facebook\n";
+              } else if (i % 3 == 0) {
+                result += "Face\n";
+              } else if (i % 5 == 0) {
+                result += "Book\n";
+              } else {
+                result += "" + i + "\n";
+              }
+            }
+            sendTextMessage(senderID, result);
+          }
+        } else {
+          sendTextMessage(senderID, messageText + " is not a number!");
+        }
     }
   } else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
   }
 }
+
+/*
+It will respond in one message counting to to number starting from 1. Each number is printed on a new line.
+If the number is a multiple of 3, it will print "Face" instead of the number.
+If the number is a multiple of 5, it will print "Book" instead of the number.
+If the number is a multiple of 3 and 5, it will print "Facebook" instead of the number.
+
+If the input is not a number it will return the input + " is not a number!".
+If the input is <= 0, it will print out the number + " should be a positive number!".
+*/
 
 
 /*
