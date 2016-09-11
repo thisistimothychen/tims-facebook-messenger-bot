@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "EAACl9YOGQaUBAJIo5zuxOcZCfQAM2OF7MpcU97nrURnQr1QkaBER0coVoBjoOKDiRSx2un3ZBvpFGtfRQPQZBsXxwtweidZCrnudDlGkziKxvQhFoGWIFR7VQYSRCZBpBFsTZAzFPMROdxT1oDoSGqgxL7AasKLYOIfO9Hlqy6TAZDZD",
+    "appSecret": "31fd0c4d00b273a954257b02d5d0531c",
+    "pageAccessToken": "EAACl9YOGQaUBAC7U8NvbEx3d7djS0JN9Io8NinkUy9s9ee9Y6QikMcdVbANnA6CS4D565j8iXrfrtyE20duublkK1djjkpoCtZCugVrzalzV91NSEZBz6bEXdvCE1bZACHeqHZC1ZBGDyr8BEbRJfb5UWPdRt47U6Ef0WyGvV5QZDZD",
     "validationToken": "my_awesome_verify_token",
-    "serverURL": ""
+    "serverURL": "heroku.com"
 }
